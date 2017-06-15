@@ -3,6 +3,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 20px 25px;
+}
+
+.music-form input {
+  margin: 10px;
+  justify-content: baseline;
 }
 
 .main-square {
@@ -15,7 +21,12 @@
 }
 
 .main-square img {
-  width:100%;
+  width: 75%;
+}
+
+.main-square {
+  margin-top: 20px;
+  justify-content: center;
 }
 
 ul li {
@@ -33,5 +44,26 @@ ul li {
       width: 100px;
       margin-top: 10px;
     }
+  }
+}
+
+.title-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery h3 {
+  text-align: center;
+}
+@media #{$small-width} {
+  .gallery li {
+
+  }
+}
+
+@media #{$small-width} {
+  .gallery h3 {
+    flex-basis: 50%;
   }
 }

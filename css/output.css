@@ -17,22 +17,43 @@ li {
 .menu-icon {
   width: 100vw;
   display: flex;
-  justify-content: flex-end; }
+  height: 65px;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.menu-icon {
+  justify-content: space-between; }
+
+.menu-icon img {
+  margin: 2px 10px;
+  width: 40px;
+  height: 35px;
+  align-self: center; }
 
 @media only screen and (max-width: 600px) {
   .navbar {
     display: none; } }
 @media only screen and (min-width: 701px) and (max-width: 1100px) {
   #menu-icon {
+    display: none; }
+
+  #note {
     display: none; } }
 @media only screen and (min-width: 1101px) {
   #menu-icon {
+    display: none; }
+
+  #note {
     display: none; } }
 .music-form {
   width: 100vw;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: 20px 25px; }
+
+.music-form input {
+  margin: 10px;
+  justify-content: baseline; }
 
 .main-square {
   width: 100vw;
@@ -43,7 +64,11 @@ li {
   flex-wrap: wrap; }
 
 .main-square img {
-  width: 100%; }
+  width: 75%; }
+
+.main-square {
+  margin-top: 20px;
+  justify-content: center; }
 
 ul li {
   width: 100vw;
@@ -57,5 +82,16 @@ ul li {
     .music-form #form-submit {
       width: 100px;
       margin-top: 10px; } }
+.title-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.gallery h3 {
+  text-align: center; }
+
+@media only screen and (max-width: 600px) {
+  .gallery h3 {
+    flex-basis: 50%; } }
 
 /*# sourceMappingURL=output.css.map */
