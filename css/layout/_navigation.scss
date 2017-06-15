@@ -1,0 +1,28 @@
+
+li {
+  list-style: none;
+}
+
+.menu-icon {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media #{$small-width} {
+  .navbar {
+    display: none;
+  }
+}
+
+@media #{$medium-width} {
+  #menu-icon {
+    display: none;
+  }
+}
+
+@media #{$large-width} {
+  #menu-icon {
+    display: none;
+  }
+}

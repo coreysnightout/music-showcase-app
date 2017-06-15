@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <!-- <link rel="stylesheet" href="/css/bootstrap.css" media="screen" type="text/css"> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/output.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
     <title>Music Showcase</title>
   </head>
   <body>
     <!-- navbar start -->
+    <div class="menu-icon">
+      <img id="menu-icon" src="img/menu.png" alt="menu bar" />
+    </div>
     <div class="navbar">
       <img src="" alt="" />
       <li></li>
@@ -20,9 +24,33 @@
       <!-- navbar end -->
     </div>
     <div class="wrap">
-      <div class="carousel">
+      <!-- carousel start -->
 
+      <!--end of carousel-->
+    </div>
+    <!-- input form -->
+    <form class="music-form">
+      <h3>Enter Artist</h3>
+      <div class="artist-form">
+        <input id="artist-input" type="text">
       </div>
+      <h3>Enter Album</h3>
+      <div class="ablum-form">
+        <input id="album-input" type="text">
+      </div>
+      <h3>Enter Photo URL</h3>
+      <div class="photo-form">
+        <input id="photo-input" type="text">
+      </div>
+      <button id="form-submit" type="submit" name="button">Submit Artist</button>
+    <!-- input form end -->
+  </form>
+    <!-- album art photos start -->
+    <ul class="ul">
+
+    </ul>
+    <div class="album-cover">
+
     </div>
   </body>
 </html>
