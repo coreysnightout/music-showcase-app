@@ -6,6 +6,11 @@
 
 body {
   display: flex;
-  flex-wrap: wrap;
   background-color: #f1f2f3;
+  font-family: sans-serif;
+  flex-wrap: wrap;
+  // background-image: linear-gradient(to top, grey, white);
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }

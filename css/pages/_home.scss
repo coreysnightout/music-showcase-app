@@ -1,7 +1,37 @@
 .music-form {
   width: 100vw;
   display: flex;
-  align-content: flex-start;
-  justify-content: flex-start;;
+  justify-content: center;
   flex-wrap: wrap;
+}
+
+.main-square {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-size: contain;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-square img {
+  width:100%;
+}
+
+ul li {
+  width: 100vw;
+  height: auto;
+  img {
+    width: 100%;
+  }
+}
+
+@media #{$small-width} {
+  .music-form {
+    flex-direction: column;
+    & #form-submit {
+      width: 100px;
+      margin-top: 10px;
+    }
+  }
 }

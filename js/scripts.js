@@ -7,17 +7,13 @@ function Album(artist, title, image) {
 
 var albumArray = [];
 
-function resetFields() {
-  $("#artist-input").val("");
-  $("#album-input").val("");
-  $("#photo-input").val("");
-}
 
-// user interface//
+
 $(document).ready(function() {
-  $(".music-form").submit(function(event) {
+  $(".music-form").submit(function(event) { debugger;
     event.preventDefault();
-    debugger;
+
+    $(".main").removeClass("<li></li>");
 
     var title = $("#album-input").val();
     var artist = $("#artist-input").val();
@@ -25,8 +21,13 @@ $(document).ready(function() {
 
     var newAlbum = new Album(artist, title, image);
 
-    console.log(newAlbum);
-
+    albumArray.pop(0);
     albumArray.push(newAlbum);
-  })
-})
+
+    $('ul').append("<li>" + artist + "<br>" + title + "<br>" + '<img src="' + image + '" alt="">' + "</li>");
+
+
+    $(".main").addClass("<li>" + artist + "<br>" + title + "<br>" + '<img src="' + image + '" alt="">' + "</li>");
+
+  });
+});
